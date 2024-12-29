@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header Navigation Bar</title>
+    <title>Personal Webpage</title>
     <style>
         body {
             margin: 0;
@@ -127,6 +127,11 @@
             font-size: 0.9em;
         }
 
+        .skill:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        
         .footer {
             background-color: #333;
             color: white;
@@ -165,17 +170,17 @@
     <header class="navbar">
         <div class="logo">Saimadhav S</div>
         <nav class="nav-links">
-            <a href="#">About</a>
-            <a href="#">Projects</a>
-            <a href="#">Skills</a>
-            <a href="#">Contact</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <div class="content">
-        <img src="../Pictures/Saimadhav.jpg" alt="Profile Picture" class="profpic">
+        <img src="https://drive.google.com/thumbnail?id=1aW7qty6gfSQbl6EPS7YRrOTqfoXp_TJm" alt="Profile Picture" class="profpic">
         <div>
-            <h2> About</h2>
+            <h2 id = "about">About</h2>
             <p class="heading" style="text-align:justify;">
             Saimadhav is a masters student in the Industrial Engineering and Operations Research program at IIT Bombay. He previously obtained his bachelor's in Computer Science Engineering
             from Madras Institute of Technology, Chennai. He is interested in Digital Twin Simulation, Supply Chain, and Artificial Intelligence applications to supply chains. 
@@ -183,14 +188,15 @@
             </p>
         </div>
     </div>
-    <h2 style="margin-left: 20px;">Projects</h2>
+    <h2 style="margin-left: 20px;" id = "projects">Projects</h2>
     <div class="cards">
         <div class="card">
+            <div class="card-title">Optimal Overbooking Model for Airlines</div>
+            <div class="card-content">Modelling the overbooking scenario as an optimization model with regularization and solving it computationally.</div>
+        </div>
+        <div class="card">
             <div class="card-title">XAI-Cardiocare : eXplainable AI driven heart valve disease detection</div>
-            <div class="card-content">A web based deep learning system that classifies heart sound signals as NORMAL or MVP or MR or MS or AS (Disease classes). My contribution to the project was in training a 2-D CNN model and adding explainability to the system. Libraries used : Tensorflow, Keras, SciPy, NumPy, Flask.
-                                      Libraries used : Tensorflow, Keras, SciPy, NumPy, Flask.
-
-            </div>
+            <div class="card-content">A web based deep learning system that classifies heart sound signals as NORMAL or MVP or MR or MS or AS (Disease classes). My contribution to the project was in training a 2-D CNN model and adding explainability to the system. Libraries used : Tensorflow, Keras, SciPy, NumPy, Flask. </div>
         </div>
         <div class="card">
             <div class="card-title">Natal.ml : Perinatal health risk prediction using machine learning</div>
@@ -201,20 +207,24 @@
             <div class="card-content">Problem Statement : Absence of community or friends to work out along for various fitness activities reduces our efficiency both physically and mentally. There are very few readily available means for finding people exclusively for such situations. My work in the project was backend development.</div>
         </div>
     </div>
-    <h2 style="margin-left: 20px;">Skills</h2>
+    <h2 style="margin-left: 20px;" id = "skills">Skills</h2>
     <div class="skills">
         <div class="skill">Python</div>
         <div class="skill">Machine Learning</div>
-        <div class="skill">Data Analysis</div>
-        <div class="skill">Digital Twin Simulation</div>
-        <div class="skill">Supply Chain Optimization</div>
+        <div class="skill">C++</div>
+        <div class="skill">Pyomo</div>
+        <div class="skill">SQL</div>
+        <div class="skill">Java</div>
+        <div class="skill">glpk</div>
+        <div class="skill">qp</div>
         <div class="skill">Flask</div>
         <div class="skill">TensorFlow</div>
     </div>
 
     <footer class="footer">
-        <p>&copy; 2024 Saimadhav S</p>
-        <div>
+        
+        <div id = "contact">
+            &copy; 2024 Saimadhav S
             <a href="https://github.com/passeng02" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub"></a>
             <a href="https://www.linkedin.com/in/saimadhav-s-a0967618b/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
             <a href="mailto:24m1532@iitb.ac.in"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail"></a>
